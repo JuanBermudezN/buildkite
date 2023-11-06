@@ -5,7 +5,7 @@ steps:
 
   - wait
 
-  - command: "echo 'the previous command didn't fail'"
+  - command: "echo succesful command"
     label: ":white_check_mark: Example command after wait instruction"
 
     agents:
