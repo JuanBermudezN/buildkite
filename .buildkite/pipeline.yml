@@ -1,7 +1,6 @@
 steps:
 
   - block: "Select the environment to deploy: "
-    hint: "In which environment do you want to deploy?"
     fields:
       - select: "Environment"
         key: "app-environment"
@@ -12,7 +11,7 @@ steps:
             value: "Staging"
   
   - wait 
-  
+
   - command: 
   - label: ":hammer: Example Script"
     command: "scripts/script.sh"
