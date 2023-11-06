@@ -7,6 +7,3 @@ steps:
 
   - command: "echo succesful command"
     label: ":white_check_mark: Example command after wait instruction"
-
-    agents:
-      queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
