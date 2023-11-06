@@ -12,7 +12,6 @@ steps:
   
   - wait 
 
-  - command: 
   - label: ":hammer: Example Script"
     command: "scripts/script.sh"
     artifact_paths: "artifacts/*"
