@@ -2,5 +2,11 @@ steps:
   - label: ":hammer: Example Script"
     command: "scripts/script.sh"
     artifact_paths: "artifacts/*"
+
+  - wait
+
+  - command: "echo the previous command didn't fail"
+    label: ":white_check_mark: Example command after wait instruction"
+    
     agents:
       queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
