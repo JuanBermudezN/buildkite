@@ -2,5 +2,16 @@ name: "Bash Example"
 description: "An example repository you can use as a test project with Buildkite"
 emoji: ":bash:"
 steps:
+  - block: "Select the environment to deploy: "
+    hint: "In which environment do you want to deploy?"
+    fields:
+      - select: "Environment"
+        key: "app-environment"
+        options:
+          - label: "Development"
+            value: "Development"
+          - label: "Staging"
+            value: "Staging"
+            
   - command: "buildkite-agent pipeline upload"
     label: ":pipeline:"

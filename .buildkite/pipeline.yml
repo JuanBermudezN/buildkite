@@ -1,12 +1,11 @@
 steps:
+  - command: 
   - label: ":hammer: Example Script"
     command: "scripts/script.sh"
     artifact_paths: "artifacts/*"
 
-  - command: "sleep 120"
-    label: ":hammer: sleep command"
-
-  - wait
-
   - command: "echo succesful command"
     label: ":white_check_mark: Example command after wait instruction"
+
+  - label: ":hammer: Script with metadata variables"
+    command: "scripts/staging.sh"
