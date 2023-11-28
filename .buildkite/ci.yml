@@ -7,9 +7,6 @@ steps:
   - command: "echo succesful command"
     label: ":white_check_mark: Example command after wait instruction"
 
-  - label: ":hammer: Script with metadata variables"
-    command: "scripts/staging.sh"
-
   - wait 
 
   - trigger: buildkite-cd
