@@ -4,8 +4,8 @@ steps:
     command: "scripts/script.sh"
     artifact_paths: "artifacts/*"
 
-  - command: "echo succesful command"
-    label: ":white_check_mark: Example command after wait instruction"
+  - command: "echo succesful FEATURE CI command"
+    label: ":white_check_mark: Example FEATURE CI command after wait instruction"
 
   - wait 
 
