@@ -1,17 +1,5 @@
 steps:
 
-  - block: "Select the environment to deploy: "
-    fields:
-      - select: "Environment"
-        key: "app-environment"
-        options:
-          - label: "Development"
-            value: "Development"
-          - label: "Staging"
-            value: "Staging"
-  
-  - wait 
-
   - label: ":hammer: Example Script"
     command: "scripts/script.sh"
     artifact_paths: "artifacts/*"
@@ -21,3 +9,7 @@ steps:
 
   - label: ":hammer: Script with metadata variables"
     command: "scripts/staging.sh"
+
+  - wait 
+
+  - trigger: buildkite-cd
